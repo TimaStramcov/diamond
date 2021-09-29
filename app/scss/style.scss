@@ -1,0 +1,42 @@
+@import './reset';
+@import './vars';
+@import './fonts';
+@import './mixins';
+
+.diamond__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    .diamond{
+        width: 20%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        background-image: url(../img/go.svg);
+        background-size: contain;
+
+        
+        svg{
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+        }
+        .text{
+            position: absolute;
+            z-index: 3;
+            top: 8%;
+            color:  white;
+            text-align: center;
+            font-size: calc(5px + 12vw);
+            text-transform: capitalize;
+            overflow: hidden;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
